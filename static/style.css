@@ -1,0 +1,65 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+    color: #444;
+  }
+  h1, h2 {
+    margin-top: 0.2em; /* Reduce the top margin */
+    margin-bottom: 0.2em; /* Reduce the bottom margin if necessary */
+  }
+  #messages {
+    list-style-type: none;
+    padding: 0;
+    overflow: auto;
+    height: 250px; /* Adjust height as needed */
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 25px;
+  }
+  
+  #messages li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  #messages li:last-child {
+    border-bottom: none;
+  }
+  
+  #myMessage {
+    padding: 10px;
+    width: 75%;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  #sendbutton {
+    padding: 10px 20px;
+    width: 20%;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #sendbutton:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* Add responsiveness to the chat UI */
+  @media (max-width: 768px) {
+    #myMessage, #sendbutton {
+      width: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    #sendbutton {
+      width: 100%;
+    }
+  }
+  
